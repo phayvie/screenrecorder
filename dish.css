@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+}
+
+
+
+.dishes{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100vw;
+    margin: auto;
+    animation: fadein 0.4s linear;
+}
+
+@keyframes fadein{
+0%{
+ opacity:0;
+
+ }
+
+100%{
+    opacity:1;
+}
+}
+
+.dishes .dish{
+    display: grid;
+    justify-content: center;
+    background-color: rgba(0, 0, 0,0.4);
+    width: 270px;
+    height: 450px;
+    grid-template-rows: 20% 70% 10%;
+    border: 1px solid rgb(75, 74, 74);
+    box-shadow: 1px 1px 5px black;
+}
+ 
+.dishes .dish .h1{
+    background-color: rgba(0, 0, 0,0.8);
+    border-bottom: 1.5px solid rgb(228, 221, 221);
+    color: white;
+}
+
+.dishes .dish .main{
+    display: grid;
+    border-bottom:1.5px solid rgb(228, 221, 221);
+    grid-template-rows: 90% 10%;
+}
+
+.dishes .dish .main .f1{
+    background-color: rgba(0, 0, 0,0.8);
+    border-top: 1.5px solid rgb(228, 221, 221);
+}
+
+.dishes .dish .footer{
+    background-color: rgba(0, 0, 0,0.8);
+}

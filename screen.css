@@ -182,7 +182,7 @@ text-shadow: black 5px 5px 5px;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 8px;
     margin: auto;
     overflow-x: scroll;
     padding-left: 15px;
@@ -201,6 +201,68 @@ text-shadow: black 5px 5px 5px;
 }
 
 
+#pic1{
+    background-image: url("food1.jpg") ;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+ } 
+
+ #pic2{
+    background-image: url("food2.jpg") ;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+ } 
+
+
+ #pic3{
+    background-image: url("food3.jpg") ;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+ } 
+
+ 
+#pic4{
+    background-image: url("food4.jpg") ;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+ } 
+
+ 
+#pic5{
+    background-image: url("food5.jpg") ;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+ } 
+ #pic6{
+    background-image: url("food6.jpg") ;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+ } 
+
+ #pic7{
+    background-image: url("food7.jpg") ;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+ } 
+ #pic8{
+    background-image: url("food8.jpg") ;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+ } 
+ #pic9{
+    background-image: url("food9.jpg") ;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+ } 
 
 .span{
     width: 100vw;
@@ -230,6 +292,35 @@ text-shadow: black 5px 5px 5px;
 }
 
 
+.span2{
+    width: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0,0.8);
+    padding: 10px;
+     overflow-x: hidden;
+}
+
+
+.span2 h3{
+    text-align: center;
+    color: rgb(228, 221, 221) ;
+    animation: move 8s linear infinite;
+   
+}
+
+@keyframes move {
+    0%{
+        transform: translateX(-100%);
+    }
+
+    50%{
+        transform: translateX(0%);
+    }
+
+    100%{
+        transform: translateX(100%);
+    }
+}
  
 @media (max-width:600px) {
     .mama p{

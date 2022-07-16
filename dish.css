@@ -16,21 +16,25 @@ body{
  flex-wrap: wrap;
  margin: 10px;
  gap: 5px;
+ width: 100vw;
+ font-family: 'Edu SA Beginner', cursive;
 }
 
 .dished .box{
     width: 300px;
     height: 450px;
-    background-color: rgba(0, 0, 0,0.8);
+    background-color: rgba(236, 229, 229, 0.9);
     display: grid;
     grid-template-rows: 20% 60% 20%;
     gap: 1px;
-    border: 1px white solid;
+    border: 1px grey;
+    box-shadow: 1px 1px 5px black;
     padding: 2px;
     transform: translateX(800%);
     opacity: 0;
     transition: 0.5s;
     transition-delay: 0.3;
+    /* filter: drop-shadow( 5px 15px 5px black); */
 }
 
 .dished .box:nth-of-type(even){
@@ -50,7 +54,7 @@ body{
     justify-content: space-between;
     align-items: center;
     color: white;
-    border-bottom: 1px solid white;
+    box-shadow: 1px 1px 5px black;
 
 }
 
@@ -58,21 +62,25 @@ body{
 width: 50px;
 height: 50px;
 border-radius: 50%;
-border: 2px white solid;
+border: 2px solid rgb(23, 3, 61);;
 }
 
 .dished .box .boxhead .namedish{
  display: flex;
  flex-direction: column;
  justify-content: center;
+ color: black;
 }
 
 .dished .box .boxhead .namedish .name{
 text-align: center;
+font-weight: 900;
 }
 
 .dished .box .boxhead .namedish .dish{
     text-align: left;
+    color: rgb(161, 1, 1);
+    font-weight: 00;
 }
 
 .dished .box .boxhead .viewfollow{
@@ -80,13 +88,78 @@ text-align: center;
     flex-direction: column;
     justify-content: center;
     text-align: right;
+    color: rgb(161, 1, 1);
+    font-weight: 900;
 }    
 
 .boxmain{
-    border-bottom: 1px solid white;
+   
     width: 100%;
 }
 
+#box1{
+   background-image: url("food1.jpg") ;
+   background-size: cover;
+   background-position: center;
+   object-fit: cover;
+}
+ 
+#box2{
+    background-image: url("food2.jpg") ;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+ }
+
+
+ #box3{
+    background-image: url("food3.jpg") ;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+ }
+
+ #box4{
+    background-image: url("food4.jpg") ;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+ }
+
+ #box5{
+    background-image: url("food5.jpg") ;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+ }
+
+ #box6{
+    background-image: url("food6.jpg") ;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+ }
+
+ #box7{
+    background-image: url("food7.jpg") ;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+ }
+
+ #box8{
+    background-image: url("food8.jpg") ;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+ }
+
+ #box9{
+    background-image: url("food9.jpg") ;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+ }
 
 .boxfooter{
     width: 100%;
@@ -98,9 +171,9 @@ text-align: center;
 
 .boxfooter .howlikeshare{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
-    border-bottom: 1px solid white;
+ 
 }
 
 .boxfooter .howlikeshare .howlike{
@@ -128,23 +201,31 @@ text-align: center;
 }
 
 .boxfooter .likeshare .like{
-    background-color: aliceblue;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .boxfooter .likeshare .comment{
-    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .boxfooter .likeshare .download{
-    background-color: aliceblue;
+    display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .boxfooter .likeshare .share{
-    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width:370px) {
     .dished .box{
-      width: 100%;
+      width: 100vw;
     }
 }

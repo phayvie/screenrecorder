@@ -19,7 +19,7 @@ window.addEventListener('load', ()=>{
 
 window.addEventListener('scroll',()=>{
  box.forEach(boxes => {
-    windowTop=window.innerHeight-60;
+    windowTop=window.innerHeight-40;
     var boxTop = boxes.getBoundingClientRect().top;
     if(boxTop<windowTop){
         boxes.classList.add('show')

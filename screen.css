@@ -268,7 +268,6 @@ text-shadow: black 5px 5px 5px;
     width: 100vw;
     display: inline-block;
     background-color: rgba(0, 0, 0,0.8);
-    padding: 10px;
 }
 
 .span h3{
@@ -296,7 +295,6 @@ text-shadow: black 5px 5px 5px;
     width: 100%;
     display: inline-block;
     background-color: rgba(0, 0, 0,0.8);
-    padding: 10px;
      overflow-x: hidden;
 }
 

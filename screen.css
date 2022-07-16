@@ -29,6 +29,7 @@ a{
     height: 100vh;
     width: 100vw;
     animation: fadein 0.4s linear;
+    overflow-x: hidden;
 }
 
 @keyframes fadein{
@@ -68,7 +69,7 @@ img.rotate{
     justify-content: center;
     flex-direction: column;
     box-shadow: black 2px 2px  5px;
-    
+    font-family: 'Edu SA Beginner', cursive;
 }
 
 .menu-bar div{
@@ -165,6 +166,7 @@ input{
     margin: 0;
     background-color: rgba(0, 0, 0,0.4);
     width: 100vw;
+    overflow-x: hidden; 
 }
 
 .container2 h2{
@@ -207,7 +209,7 @@ text-shadow: black 5px 5px 5px;
     padding: 10px;
 }
 
-div h3{
+.span h3{
     text-align: center;
     color: rgb(228, 221, 221) ;
     animation: move 8s linear infinite;

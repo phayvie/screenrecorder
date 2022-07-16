@@ -9,57 +9,142 @@ body{
     justify-content: center;
 }
 
-
-
-.dishes{
-    display: flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    gap: 5px;
-    width: 100vw;
-    margin: auto;
-    animation: fadein 0.4s linear;
+.dished{
+ display: flex;
+ justify-content:space-evenly;
+ align-items: center;
+ flex-wrap: wrap;
+ margin: 10px;
+ gap: 5px;
 }
 
-@keyframes fadein{
-0%{
- opacity:0;
-
- }
-
-100%{
-    opacity:1;
-}
-}
-
-.dishes .dish{
-    display: grid;
-    justify-content: center;
-    background-color: rgba(0, 0, 0,0.4);
-    width: 270px;
+.dished .box{
+    width: 300px;
     height: 450px;
-    grid-template-rows: 20% 70% 10%;
-    border: 1px solid rgb(75, 74, 74);
-    box-shadow: 1px 1px 5px black;
-}
- 
-.dishes .dish .h1{
     background-color: rgba(0, 0, 0,0.8);
-    border-bottom: 1.5px solid rgb(228, 221, 221);
-    color: white;
-}
-
-.dishes .dish .main{
     display: grid;
-    border-bottom:1.5px solid rgb(228, 221, 221);
-    grid-template-rows: 90% 10%;
+    grid-template-rows: 20% 60% 20%;
+    gap: 1px;
+    border: 1px white solid;
+    padding: 2px;
+    transform: translateX(800%);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.3;
 }
 
-.dishes .dish .main .f1{
-    background-color: rgba(0, 0, 0,0.8);
-    border-top: 1.5px solid rgb(228, 221, 221);
+.dished .box:nth-of-type(even){
+   
+    transform: translateX(-800%);
 }
 
-.dishes .dish .footer{
-    background-color: rgba(0, 0, 0,0.8);
+.dished .box.show{
+    transform: translateX(0);
+     opacity: 1;
+}
+
+.dished .box .boxhead{
+    background-color: rgba(0, 0, 0,0.1);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-bottom: 1px solid white;
+
+}
+
+.dished .box .boxhead .profilepic{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+border: 2px white solid;
+}
+
+.dished .box .boxhead .namedish{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.dished .box .boxhead .namedish .name{
+text-align: center;
+}
+
+.dished .box .boxhead .namedish .dish{
+    text-align: left;
+}
+
+.dished .box .boxhead .viewfollow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}    
+
+.boxmain{
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+
+.boxfooter{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    gap: 2px;
+}
+
+
+.boxfooter .howlikeshare{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.boxfooter .howlikeshare .howlike{
+    background-color: aliceblue;
+    border-right: 1px solid black;
+}
+
+
+.boxfooter .howlikeshare .howshare{
+    background-color: aliceblue;
+    
+}
+
+
+.boxfooter .howlikeshare .howdownloads{
+    background-color: aliceblue;
+    border-right: 1px solid black;
+}
+
+.boxfooter .likeshare{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1px;
+}
+
+.boxfooter .likeshare .like{
+    background-color: aliceblue;
+}
+
+.boxfooter .likeshare .comment{
+    background-color: aliceblue;
+}
+
+.boxfooter .likeshare .download{
+    background-color: aliceblue;
+}
+
+.boxfooter .likeshare .share{
+    background-color: aliceblue;
+}
+
+@media (max-width:370px) {
+    .dished .box{
+      width: 100%;
+    }
 }
